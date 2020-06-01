@@ -3,6 +3,6 @@
 @section('content')
 
     {{-- ユーザー一覧 --}}
-    @include('users.users')
+    @include('users.users', $user = Auth::user())
 
 @endsection
